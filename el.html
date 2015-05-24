@@ -1,0 +1,19 @@
+<!DOCTYPE>
+<html>
+<head>
+    <script type="text/javascript">
+        function GetChar (event){
+            var keyCode = ('which' in event) ? event.which : event.keyCode;
+            alert ("The Unicode key code of the released key: " + keyCode);
+        }
+	document.addEventListener("keyup", GetChar);
+	
+	window.onclick = function() {
+	return false;
+	console.log('ok!');
+	}
+    </script>
+</head>
+<body>
+
+</body>

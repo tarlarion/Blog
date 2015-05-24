@@ -1,0 +1,53 @@
+/* Logotype Animation */
+
+#logo {
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transform: rotate(0deg);
+	-moz-transition: all 0.4s ease-in-out;
+}
+
+#logo:hover  {
+	-webkit-transform: rotate(360deg);
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transform: rotate(360deg);
+	-moz-transition: all 0.7s ease-in-out;
+}
+
+/* Bus Animation */
+
+.logo__wrapper:hover {
+	-webkit-transform: rotate(360deg);
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transform: rotate(360deg);
+	-moz-transition: all 0.7s ease-in-out;
+}
+
+.logo__wrapper {
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transform: rotate(0deg);
+	-moz-transition: all 0.4s ease-in-ut;
+}
+
+#bus {
+	-webkit-animation: 'magicbus';
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: easy-in-out;
+	-webkit-animation-iteration-co	unt: 1;
+	-webkit-animation-delay: 3s;
+}
+
+@-webkit-keyframes magicbus {
+	100% {left: 3000px;}
+}
+
+#stage-3 .heart:hover {
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transform: rotate(0deg);
+	-moz-transition: all 0.4s ease-in-out;
+}
+
+/* Button Stage-3 Animation */
+

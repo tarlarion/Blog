@@ -1,0 +1,296 @@
+* {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+
+}
+
+@font-face {
+	font-family: Calibri Light;
+	src: url('fonts/calibril.ttf');
+}
+
+@font-face {
+	font-family: Calibri Bold;
+	src: url('fonts/calibrib.ttf');
+}
+/*  TAGS */
+
+body {
+	background: #1d2cba;
+	font-family: 'Calibri Bold';
+	font-size: 13px;
+	overflow-x: hidden;
+}
+
+/* Typographic */
+
+h1 {
+	font-family: 'Calibri Light';
+	font-size: 4em;
+	line-height: 1em;
+	color: rgb(255,255,255);
+	text-align: left;
+
+}
+
+p {
+	font-size: 1.6334em;
+	text-align: left;
+	color: rgb(255,255,255);
+	line-height: 1.3em;
+	font-family: 'Calibri Light';
+	text-indent: 0px;
+
+	text-shadow: 1px 1px rgba(0,0,0,0.1);
+}
+
+
+
+/* Navbar */
+
+nav {
+		top: 0px;
+		left: 0px;
+		width: 260px;
+		min-height: 1000px;
+		z-index: 1111;
+		position:fixed;
+		margin: 0px 0px 0px 0px;
+}
+
+	nav .space {
+			height: 2000px;
+			background-color: #04101b;
+			border-right: 1px solid;
+	}
+
+	nav .shadow {
+			height: 1px;
+			background-color: rgba(0,0,0,0.2); /*255,209,48*/
+	}
+
+	nav .wrapper {
+		float: left;
+		margin-left: 30px;
+		margin-top: 60px;
+	}
+
+	nav ul {
+		float: left;
+		display: block;
+		width: 200px;
+		border-top: 1px solid #2d4479;
+	}
+
+	nav ul li {
+		list-style: none;
+		text-align: left;
+		padding: 10px;
+		margin-bottom: 10px;
+		margin-left: 50px;
+		list-style-type: none;
+		list-style-image: none;
+	}
+
+	nav ul li:hover {
+		list-style: none;
+		text-align: left;
+		padding: 10px;
+		margin-bottom: 10px;
+		margin-left: 50px;
+		list-style-type: none;
+		list-style-image: none;
+		background: #071f35;
+	}
+
+	nav a {
+		font-size: 1.3em;
+		text-decoration: none;
+		color: rgba(255,255,255,1);
+		font-family: 'Calibri Light';
+
+	}
+
+	nav a:link {
+		color: rgba(255,255,255,1);
+
+	}
+
+	nav a:visited {
+		color: rgba(255,255,255,1);
+	}
+
+	nav a:hover {
+		color: rgb(187,178,28);
+
+	}
+
+	nav a.mail  {
+		font-size: 1.1em;
+		text-decoration: none;
+		color: rgba(255,255,255,1);
+		font-family: 'Calibri Light';
+	}
+
+.contacts {
+	float: left;
+	margin-top:60px;
+	color: rgba(255,255,255,1);
+	font-family: 'Calibri Light';
+}
+
+
+
+.logo__wrapper {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	padding: 0px 0px 0px 2px;
+	border: 3px solid rgba(0,0,0,1);
+	margin: 20px 0px 0px 20px;
+
+}
+
+.logo__wrapper:hover {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	padding: 10px 0px 0px 10px;
+	border: 3px solid rgba(0,0,0,1);
+	margin: 20px 0px 0px 20px;
+
+}
+
+#logo {
+	width:50px;
+	height:50px;
+	background: url('images/logo2.png') no-repeat;
+	margin-right: 50px;
+	cursor: hand;
+}
+
+
+#stage-2 {
+	background: rgb(24,27,50);
+	min-height: 1000px;
+	overflow: hidden;
+}
+
+#stage-3 {
+
+	padding-bottom: 5em;
+	   min-height: 750px;
+		     width: 100%;
+
+	border-color: rgb(0,0,0);
+		 border-style: solid;
+		  border-bottom: 2px;
+			 border-top: 2px;
+			  border-right:0;
+			   border-left:0;
+
+
+
+	 background: rgba(205,65,65,1);
+
+}
+
+.first-stage-margin {
+	min-height: 60px;
+}
+
+.layout_980 {
+	padding-top: 20px;
+	margin: 0 auto;
+	width:980px;
+}
+
+#stage-1 {
+	min-height:1000px;
+	width:100%;
+	}
+
+.stage-1-illustration {
+		margin-left:156px;
+		width: 538px;
+		height: 290px;
+		background: url('images/stage1-bg.png') no-repeat center;
+	}
+
+#stage-1-illustration-profile {
+		float:left;
+		margin: 0 auto;
+		width: 214px;
+		height: 214px;
+		background: url('images/valex-logo.png') no-repeat center;
+
+	}
+
+.stage-1-title {
+	width:400px;
+	margin-left:280px;
+	margin-top: 20px;
+}
+
+.stage-title-first-part {
+	color: rgba(255,255,255,1);
+	font-family: 'Calibri Bold';
+}
+
+.stage-title-second-part {
+	color: rgba(154,196,255,1);
+	font-family: 'Calibri Bold';
+}
+
+.stage-1-bodycopy {
+	width: 300px;
+	margin-top:15px;
+	margin-left:280px;
+	text-align:center;
+}
+
+.next {
+	background: url('images/next-arrow.png') no-repeat;
+						  background-position: 97% 50%;
+
+	border: 2px solid rgba(0,0,0,0.5);
+			   color: rgba(0,0,0,0.5);
+					  border-radius: 50px;
+
+	padding-top: 12px;
+	padding-left: 25px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+
+	width: 160px;
+	height: 35px;
+	margin-top:50px;
+	margin-left: 280px;
+
+	font-size: 1.4em;
+}
+
+	.next:hover {
+		background: url('images/next-arrow-hover.png') no-repeat;
+							  background-position: 97% 50%;
+
+
+							  border-radius: 50px;
+
+		cursor: hand;
+
+		transition: 0.3s ease-in-out;
+	}
+
+	.next a {
+		color: rgba(255,255,255,1);
+		text-decoration: none;
+	}
+
+#stage-4	{
+	width:100%;
+	margin-top: 150px;
+	min-height:1000px;
+	background: rgb(252,233,65);
+
+}

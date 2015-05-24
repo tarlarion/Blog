@@ -1,0 +1,56 @@
+//SmoothScroll function
+function currentPosition() {
+    if (self.pageYOffset)
+        return self.pageYOffset;
+
+    if (document.body.scrollTop)
+        return document.body.scrollTop;
+
+    return 0;
+}
+
+function objectPosition(target) {
+    var target = document.getElementById(target);
+    var vd = target.offsetTop;
+    var node = target;
+        while (node.offsetParent && node.offsetParent != document.body) {
+        node = node.offsetParent;
+        vd += node.offsetTop;
+    } return vd;
+}
+
+function smoothScroll(target) {
+    var start = currentPosition();
+    var stop = objectPosition(target);
+    var distance = stop > start ? stop - start : start - stop;
+    if (distance < 100) {
+        scrollTo(0, stop);
+        return;
+    }
+
+    var speed = Math.round(distance/100);
+    if (speed >= 20) speed = 20;
+
+    var step = Math.round(distance/25);
+    var leap = stop > start ? start + step : start - step;
+    var timer = 0;
+
+    if (stop > start) {
+        for(var i = start; i < stop; i += step) {
+            setTimeout(function() {window.scrollTo(0, leap)}, timer * speed);
+
+            leap += step;
+            if (leap > stop) leap = stop;
+            timer++;
+
+        } return;
+        }
+
+        for (var i = start; i > stop; i-=step) {
+            setTimeout(function() {window.scrollTo(0, leap)}, timer * speed);
+
+            leap -= step;
+            if(leap < stop) leap = stop;
+            timer++;
+            } return false;
+}
